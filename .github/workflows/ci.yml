@@ -3,8 +3,8 @@ name: ci with Pull Request
 on:
   push:
   pull_request:
-  branches:
-  - main
+    branches:
+      - main
 
 jobs:
   dhruva:
@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: check out pull Request
-    - uses: action/checkout@v4
-    - name: run the dependancy
+      uses: actions/checkout@v4
+
+    - name: run the dependencies
       run: npm i
+
     - name: run the ci
       run: npm start
