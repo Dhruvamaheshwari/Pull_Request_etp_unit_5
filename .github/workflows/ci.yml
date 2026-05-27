@@ -1,0 +1,16 @@
+name: ci with Pull Request
+
+on:
+  push:
+  pull_request:
+  branches:
+  - main
+
+jobs:
+  dhruva:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out pull Request
+    - uses: action/checkout@v4
+    
