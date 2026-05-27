@@ -14,6 +14,6 @@ jobs:
     - name: check out pull Request
     - uses: action/checkout@v4
     - name: run the dependancy
-    - run: npm i
+      run: npm i
     - name: run the ci
-    - run: npm start
+      run: npm start
