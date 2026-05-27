@@ -13,4 +13,7 @@ jobs:
     steps:
     - name: check out pull Request
     - uses: action/checkout@v4
-    
+    - name: run the dependancy
+    - run: npm i
+    - name: run the ci
+    - run: npm start
